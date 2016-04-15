@@ -35,7 +35,7 @@ void draw() {
       //init one drop
 
       //increment drop below..
-      totalDrops++;
+      //totalDrops++;
       if (totalDrops < drops.length) {
         drops[totalDrops] = new Drop();
         totalDrops++;
