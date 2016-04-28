@@ -5,7 +5,7 @@ class Catcher {
 
   Catcher(float tempR) {
     r = tempR;
-    col = color(50, 10, 10);
+    col = color(random(255), random(255), random(255));
     x = 0;
     y = 0;
   }

@@ -21,9 +21,13 @@ void setup() {
   noCursor();
 }
 void draw() {
-  background(255);
+  background(random(255), random(255), random(255));
 
   if (gameOver) {
+    textFont(f, 48);
+    textAlign(CENTER);
+    fill(255, 0, 0);
+    text("You really just aren't good", width/2, height/2);
   } else {
 
 
@@ -73,5 +77,12 @@ void draw() {
       totalDrops = 0;
       timer.setTime(constrain(300 - level * 25, 0, 300));
     }
+    textFont(f, 14);
+    fill(0);
+    text("Lives left:" + lives, 10, 20);
+    rect(10, 24, lives*10, 10);
+
+    text("level:" + level, 300, 20);
+    text("score:" + score, 300, 40);
   }
 }
